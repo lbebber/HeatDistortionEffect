@@ -1,20 +1,20 @@
 ## Building and running
 
-## Building
+### Building
 
 `$ npm run build`
 
-## Watching
+### Watching
 
 `$ npm run watch`
 
-## Running
+### Running
 
 `$ npm run start`
 
 Then open `http://localhost:8080/demo`.
 
-## Watching & Running
+### Watching & Running
 
 `$ npm run start-dev`
 
