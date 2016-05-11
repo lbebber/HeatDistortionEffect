@@ -1,6 +1,6 @@
 ## Installing
 
-First, you'll need (https://nodejs.org/)[node.js], which includes `npm`. Then, open the project folder on the terminal and run:
+First, you'll need [node.js](https://nodejs.org/), which includes `npm`. Then, open the project folder on the terminal and run:
 
 `$ npm i`
 
