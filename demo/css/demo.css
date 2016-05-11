@@ -1,0 +1,113 @@
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+*, *::after, *::before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+	font-family: 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	color: #fff;
+	background: #333;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	outline: none;
+	color: #aaa;
+	text-decoration: none;
+}
+
+a:hover, a:focus {
+	color: #333;
+}
+
+/* Top Navigation Style */
+.codrops-links {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.codrops-links::after {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 1px;
+	height: 100%;
+	background: rgba(255,255,255,0.5);
+	content: '';
+	-webkit-transform: rotate3d(0,0,1,22.5deg);
+	transform: rotate3d(0,0,1,22.5deg);
+}
+
+.codrops-icon {
+	display: inline-block;
+	margin: 0 0.5em;
+	width: 1.5em;
+	text-decoration: none;
+}
+
+.codrops-icon span {
+	display: none;
+}
+
+.codrops-icon::before {
+	margin: 0 5px;
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'codropsicons';
+	line-height: 1;
+
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon--drop::before {
+	content: "\e001";
+	color: #0099cc;
+}
+
+.codrops-icon--prev::before {
+	content: "\e004";
+}
+
+/* Demo links */
+.codrops-demos {
+	margin: 0;
+	display: inline-block;
+	font-size: 1.05em;
+	padding: 0.5em;
+}
+
+.codrops-demos span {
+	padding: 0.5em;
+}
+
+.codrops-demos a {
+	display: inline-block;
+	margin: 0 0.5em;
+}
+
+.codrops-demos a.current-demo,
+.codrops-demos a.current-demo:hover,
+.codrops-demos a.current-demo:focus {
+	color: #333;
+}
+
+body #cdawrap {
+	top: 15px;
+	background: rgba(255,255,255,0.3);
+	border: none;
+}

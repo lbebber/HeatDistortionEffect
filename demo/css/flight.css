@@ -1,0 +1,147 @@
+body {
+	color: #3f4244;
+	background: #ececec;
+}
+
+a {
+	font-weight: bold;
+	color: #ff6938;
+}
+
+a:hover,
+a:focus {
+	color: #424446;
+}
+
+.codrops-header {
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 2em 1em 0 1em;
+	text-align: left;
+	color: #fff;
+}
+
+.codrops-header h1 {
+	font-size: 1.75em;
+	font-weight: normal;
+	font-weight: bold;
+	line-height: 1;
+	display: inline-block;
+	margin: 0;
+	vertical-align: middle;
+}
+
+.codrops-demos {
+	display: block;
+	padding: 1em 0 0;
+}
+
+.codrops-links a {
+	color: #fff;
+}
+
+.codrops-links a:hover,
+.codrops-links a:focus {
+	color: #424446;
+}
+
+.Background {
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: calc(100vw - 760px);
+}
+
+.TextContainer {
+	font-size: 22px;
+	line-height: 1.4;
+	position: absolute;
+	left: calc(100vw - 760px);
+	max-width: 760px;
+	padding-top: 50vh;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+
+.Text-title {
+	margin-left: -200px;
+}
+
+.Text-titleMedium,
+.Text-titleSmall {
+	display: none;
+}
+
+.Text {
+	font-family: Georgia, Garamond, 'Times New Roman', serif;
+	padding: 0 0 2em 0;
+}
+
+.Text p {
+	font-size: 0.85em;
+}
+
+.Text p:first-of-type {
+	font-size: 1.05em;
+	font-style: italic;
+}
+
+@media(min-width:1436px) {
+	.Background {
+		width: calc(1436px - 760px);
+	}
+	.TextContainer {
+		left: calc(1436px - 760px);
+	}
+}
+
+@media(max-width:1040px) {
+	.Background {
+		position: relative;
+		bottom: auto;
+		width: 100%;
+		max-width: none;
+		height: 100vh;
+	}
+	.TextContainer {
+		left: 0;
+		padding-top: 0;
+	}
+	.Text-title {
+		display: none;
+	}
+	.Text-titleMedium {
+		position: absolute;
+		top: -250px;
+		right: 20px;
+		display: block;
+	}
+}
+
+@media(max-width:720px) {
+	.Text-titleMedium {
+		display: none;
+	}
+	.Text-titleSmall {
+		position: absolute;
+		top: -250px;
+		right: 20px;
+		display: block;
+	}
+	.codrops-header {
+		text-align: center;
+		font-size: 0.85em;
+	}
+	.codrops-header h1 {
+		display: block;
+		padding: 1em 0 0 0;
+	}
+	.codrops-demos span {
+		display: none;
+	}
+}

@@ -1,0 +1,145 @@
+body {
+	overflow: hidden;
+	background: #5f7b48;
+}
+
+a {
+	font-weight: 600;
+	color: #adc53b;
+}
+
+a:hover,
+a:focus {
+	color: #fff;
+}
+
+
+/* Header */
+
+.codrops-header {
+	position: absolute;
+	z-index: 1000;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 1em 1em 0 1em;
+	text-align: right;
+}
+
+.codrops-header h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 1.95em;
+	font-weight: normal;
+	font-weight: bold;
+	line-height: 1;
+	margin: 0.75em 0.25em 0.5em;
+}
+
+.codrops-links a {
+	color: #fff;
+}
+
+.codrops-links a:hover,
+.codrops-links a:focus {
+	color: #adc53b;
+}
+
+.codrops-demos {
+	color: #aaa;
+}
+
+.codrops-demos a.current-demo,
+.codrops-demos a.current-demo:hover,
+.codrops-demos a.current-demo:focus {
+	color: #fff;
+}
+
+.Background {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.Background::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), transparent 50%, rgba(0, 0, 0, 0.5));
+}
+
+.intro {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 5em;
+}
+
+.intro__title {
+	font-family: 'Playfair Display', serif;
+	font-size: 7em;
+	line-height: 0.9;
+	margin: 0;
+	margin-left: -0.1em;
+	letter-spacing: -0.025em;
+}
+
+.intro__subtitle {
+	font-size: 1.25em;
+	margin: 0.5em 0;
+}
+
+.intro__button {
+	font-weight: 600;
+	margin: 2em 0 0 0;
+	padding: 1em 2.5em;
+	letter-spacing: 0.05em;
+	color: #adc53b;
+	border: 2px solid #adc53b;
+	border-radius: 2em;
+	background: none;
+	-webkit-transition: color 0.2s, background 0.2s;
+	transition: color 0.2s, background 0.2s;
+}
+
+.intro__button:hover,
+.intro__button:focus {
+	color: #fff;
+	outline: none;
+	background: #adc53b;
+}
+
+.codrops-demos {
+	padding: 0 0 1.5em;
+}
+
+@media screen and (max-width: 600px) {
+	.Background::after {
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent 80%);
+	}
+	.intro {
+		padding: 1em;
+	}
+	.intro__title {
+		font-size: 2em;
+	}
+	.intro__subtitle {
+		font-size: 0.9em;
+	}
+	.intro__button {
+		font-size: 0.75em;
+	}
+	.codrops-header h1 {
+		font-size: 1.25em;
+	}
+	.codrops-demos {
+		font-size: 0.75em;
+	}
+	.codrops-demos span {
+		display: none;
+	}
+}

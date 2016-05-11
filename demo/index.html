@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Heat Distortion Effect | Demo 1: Desert Heat</title>
+	<meta name="description" content="Demo for tutorial 'Animated Heat Distortion Effects with WebGL'" />
+	<meta name="keywords" content="heat, haze, effect, webgl, svg, animation, web development, tutorial" />
+	<meta name="author" content="Lucas Bebber for Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/desert.css" />
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body class="demo-1">
+	<div class="container">
+		<header class="codrops-header">
+			<div class="codrops-links">
+				<a class="codrops-icon codrops-icon--prev" href="http://tympanus.net/Tutorials/TheAviator/" title="Previous Demo"><span>Previous Demo</span></a>
+				<a class="codrops-icon codrops-icon--drop" href="http://tympanus.net/codrops/?p=26950" title="Back to the article"><span>Back to the Codrops article</span></a>
+			</div>
+			<h1>Heat Distortion Effect</h1>
+			<nav class="codrops-demos">
+				<span><strong>More demos:</strong></span>
+				<a class="current-demo" href="index.html">Desert</a>
+				<a href="index2.html">Jet Heat</a>
+				<a href="index3.html">Wok Heat</a>
+				<a href="index4.html">Water</a>
+			</nav>
+		</header>
+		<div class="wrap">
+			<div class="background">
+				<canvas class="background__canvas"></canvas>
+				<canvas class="background__title background__title--big"></canvas>
+				<canvas class="background__title background__title--medium" data-breakpoint="1000"></canvas>
+				<canvas class="background__title background__title--small" data-breakpoint="600"></canvas>
+			</div>
+			<!-- this is a dummy navigation; the effect of the "Africa" word is done in the canvas, not this nav -->
+			<nav class="dummynav">
+				<span class="dummynav__item">Asia</span>
+				<span class="dummynav__item dummynav__item--active">Africa</span>
+				<span class="dummynav__item">North America</span>
+				<span class="dummynav__item">South America</span>
+				<span class="dummynav__item">Antarctica</span>
+				<span class="dummynav__item">Europe</span>
+				<span class="dummynav__item">Australia</span>
+			</nav>
+		</div>
+		<header class="intro">
+			<div class="intro__content">
+				<p class="intro__text">Online portfolio of <strong>Thomas Smith</strong>, professional wildlife photographer for <strong>Rational Geographic</strong>.</p>
+			</div>
+			<div class="intro__content intro__content--pater">
+				<p class="intro__text"><strong>Want the <a href="https://goo.gl/XPyVyW" rel="nofollow">perfect job</a>, too?</strong>
+					<br /> Let Hired help you find a company you are passionate about. <a href="https://goo.gl/XPyVyW" rel="nofollow">Apply now</a>.</p>
+			</div>
+		</header>
+	</div>
+	<!-- /container -->
+	<script src="../build/desert.js"></script>
+</body>
+
+</html>
